@@ -9,5 +9,5 @@
   host: localhost
   tasks:
   - name: PLAY-2 and TASK-1
-    ansible.buitin.debug:
+    ansible.builtin.debug:
      msg: "hello i am from PLAY-2 and TASK-1"
