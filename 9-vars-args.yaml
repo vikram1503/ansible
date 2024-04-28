@@ -3,4 +3,4 @@
   tasks:
   -name: get from arguments
     ansible.builtin.debug:
-    msg: "hello {{man}},good {{wishes}}"
+     msg: "hello {{man}},good {{wishes}}"
