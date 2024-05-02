@@ -15,9 +15,9 @@
     ansible.builtin.debug:
       msg: "{{greeting | upper}}"
 
- - name: lowercase
-  hosts: localhost
-  vars:
+ - name: lower 
+   hosts: localhost
+   vars:
     greeting: "HEllo"
 
   tasks:
