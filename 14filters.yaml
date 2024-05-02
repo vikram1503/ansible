@@ -42,3 +42,18 @@
   - name: min n max
     ansible.builtin.debug:
       msg: "{{number | min}}" 
+
+- name: conv dic into list
+  hosts: localhost
+  vars:
+    mydic:
+      course: ansible
+      trainer: siva
+      dura: 120hr
+  tasks:
+  - name: beforeconv
+    ansible.builtin.debug:
+      msg: "before conv: {{mydic}}"
+  - name: after conv
+    ansible.builtin.debug:
+      msg: "after conv: {{ mydic | dict2items }}"        
