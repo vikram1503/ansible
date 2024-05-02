@@ -23,4 +23,13 @@
   tasks:
   - name: convert into lowercase
     ansible.builtin.debug:
-      msg: "{{greeting | lower}}"     
+      msg: "{{greeting | lower}}" 
+
+- name: remove dups
+  hosts: localhost
+  vars:
+   numbers: [1,1,2,2,3,4,5]
+  tasks:
+  - name: remove dups
+    ansible.builtin.debug:
+     msg: "{{numbers | unique}}" 
