@@ -32,4 +32,13 @@
   tasks:
   - name: remove dups
     ansible.builtin.debug:
-     msg: "{{numbers | unique}}" 
+     msg: "{{numbers | unique}}"
+
+- name: min and max
+  hosts: localhost
+  vars:
+    number: [25,26,35]
+  tasks:
+  - name: min n max
+    ansible.builtin.debug:
+      msg: "{{number | min}}" 
